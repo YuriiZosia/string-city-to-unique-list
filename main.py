@@ -2,10 +2,9 @@ def convert_np(np: str) -> str:
     if np == "":
         return ""
 
-    # Видалити зайві пробіли між словами
     np = np.replace("  ", " ")
     ns = np.split(",")
-    # Очистити кожен елемент від зайвих пробілів, форматувати та привести до потрібного регістру
+
     n_tuple = set(
         " ".join(
             "-".join(word.capitalize() for word in part.split("-"))
@@ -13,7 +12,7 @@ def convert_np(np: str) -> str:
         )
         for city in ns
     )
-    # Повернути форматований рядок
+
     return "н.п. " + ", н.п. ".join(n_tuple)
 
 
