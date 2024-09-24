@@ -4,6 +4,7 @@ __pycache__/
 *$py.class
 
 city_list.txt
+pidstava_to_short.py
 # C extensions
 *.so
 
