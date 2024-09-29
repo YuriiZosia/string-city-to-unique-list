@@ -24,7 +24,7 @@ content = re.sub(r"\n{2,}", "\n", content)
 #content = re.sub(r"\n[^\n]*$", "", content)
 
 # 3. Заміна "\n" на ", "
-content = content.replace("\n", ", ")
+content = content.replace("\n", "###")
 
 # Запис результату назад у файл
 with open("city_list.txt", "w", encoding="utf-8") as file:
